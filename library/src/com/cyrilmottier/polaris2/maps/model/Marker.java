@@ -45,7 +45,7 @@ public final class Marker {
             return false;
         }
 
-        return !mOriginal.equals(((Marker) other).mOriginal);
+        return mOriginal.equals(((Marker) other).mOriginal);
     }
 
     @Override
