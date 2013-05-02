@@ -48,7 +48,7 @@ Logically, the sample application doesn't include API keys. In order to run the 
 
 	<meta-data
 	    android:name="com.google.android.maps.v2.API_KEY"
-	    android:value="<your_key_here>" />
+	    android:value="your_key_here" />
 
 
 Developed By
