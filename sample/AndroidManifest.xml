@@ -32,7 +32,7 @@
         android:hardwareAccelerated="true">
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="<your_key_here>" />
+            android:value="your_key_here" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
