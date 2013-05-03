@@ -37,7 +37,7 @@ public final class PolylineOptions implements Parcelable {
     };
 
     /**
-     * DO NOT USE. The original CameraPosition.
+     * DO NOT USE. The original PolylineOptions.
      *
      * @hide
      */
