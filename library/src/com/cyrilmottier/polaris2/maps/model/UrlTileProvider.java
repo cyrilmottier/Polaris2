@@ -29,7 +29,7 @@ public abstract class UrlTileProvider implements TileProvider {
             }
 
             private URL innerGetTileUrl(int x, int y, int zoom) {
-                return getTileUrl(x, y, zoom);
+                return UrlTileProvider.this.getTileUrl(x, y, zoom);
             }
         };
     }
