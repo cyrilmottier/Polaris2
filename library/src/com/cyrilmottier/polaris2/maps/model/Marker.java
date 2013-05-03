@@ -26,7 +26,7 @@ public final class Marker {
     /**
      * <strong>DO NOT USE.</strong>
      * <p/>
-     * Obtain a new Circle based an original one.
+     * Obtain a new Marker based an original one.
      *
      * @param original
      * @return

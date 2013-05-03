@@ -29,7 +29,7 @@ public final class Polyline {
     }
 
     /**
-     * Obtain a new Circle based an original one.
+     * Obtain a new Polyline based an original one.
      *
      * @param original
      * @return

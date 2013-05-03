@@ -37,7 +37,7 @@ public final class GroundOverlayOptions implements Parcelable {
     /**
      * <strong>DO NOT USE.</strong>
      * <p/>
-     * The original CameraPosition.
+     * The original GroundOverlayOptions.
      *
      * @hide
      */
