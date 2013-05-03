@@ -39,7 +39,7 @@ public final class LatLngBounds implements Parcelable {
     /**
      * <strong>DO NOT USE.</strong>
      * <p/>
-     * The original (immutable) LatLng.
+     * The original (immutable) LatLngBounds.
      *
      * @hide
      */

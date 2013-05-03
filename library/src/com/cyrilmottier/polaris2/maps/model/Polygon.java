@@ -29,7 +29,7 @@ public final class Polygon {
     }
 
     /**
-     * Obtain a new Circle based an original one.
+     * Obtain a new Polygon based an original one.
      *
      * @param original
      * @return
