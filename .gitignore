@@ -33,4 +33,4 @@ proguard/
 *.DS_Store
 
 # Maven
-/target
+target/
