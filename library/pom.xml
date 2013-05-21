@@ -13,6 +13,10 @@
 	<name>Polaris2</name>
 	<packaging>apklib</packaging>
 
+	<properties>
+		<google-play-services.version>7</google-play-services.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.google.android</groupId>
@@ -22,18 +26,18 @@
 		<dependency> 
 		    <groupId>android.support</groupId> 
 		    <artifactId>compatibility-v4</artifactId> 
-			<version>12</version>
+			<version>13</version>
 		</dependency> 
 		<dependency>
 			<groupId>com.google.android.gms</groupId>
 			<artifactId>google-play-services</artifactId>
-			<version>6</version>
+			<version>${google-play-services.version}</version>
 			<type>apklib</type>
 		</dependency>
 		<dependency>
 			<groupId>com.google.android.gms</groupId>
 			<artifactId>google-play-services</artifactId>
-			<version>6</version>
+			<version>${google-play-services.version}</version>
 			<type>jar</type>
 		</dependency>
 	</dependencies>
