@@ -14,8 +14,9 @@ version '1.0.0'
 group 'com.cyrilmottier'
 
 repositories {
-    maven { url 'file:///usr/local/android/android-sdk-macosx/extras/android/m2repository'}
-    maven { url 'file:///usr/local/android/android-sdk-macosx/extras/google/m2repository'}
+    // should work out of the box without including those repositories, but it doesn't don't know why
+    maven { url 'file://$System.env.ANDROID_HOME/extras/android/m2repository'}
+    maven { url 'file://$System.env.ANDROID_HOME/extras/google/m2repository'}
 }
 
 android {

@@ -1,3 +1,2 @@
 include ':library'
-rootProject.name = 'polaris2-lib'
 rootProject.children.each {it.name = 'polaris2-lib'}
