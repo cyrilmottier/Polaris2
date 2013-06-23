@@ -34,3 +34,7 @@ proguard/
 
 # Maven
 target/
+
+# Gradle
+.gradle/
+*/build/

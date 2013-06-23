@@ -40,6 +40,26 @@ Usage
 
 Polaris v2 is presented as an [Android library project](http://developer.android.com/guide/developing/projects/projects-eclipse.html). You can include it by [referencing it as a library project](http://developer.android.com/guide/developing/projects/projects-eclipse.html#ReferencingLibraryProject) in Eclipse, IntelliJ or ant.
 
+###Including as gradle library project with the aar format
+
+You can build the library in aar format by running `./gradlew clean build`.  
+The aar will be located at : build/libs/polaris2-lib-version.aar.
+
+However, the android gradle plugin does not allow to include local aar directly in your project. You will have  at least to publish the aar library in your local maven repository. The library is already configured to publish itself at a maven artifact (using the maven-publish gradle plugin). You just have to run `./gradlew clean build publishToMavenLocal`.
+
+Next, include the library in your project by specifing the dependency in the build.gradle :
+
+	apply plugin: 'android'
+
+	repositories {
+	    mavenLocal()
+	}
+
+	dependencies {
+	    compile 'com.cyrilmottier:polaris2-lib:1.0.0'
+	}
+
+
 ###Building the sample application
 
 Using the Google Maps Android API v2 requires you to register a signing key to Google. When doing so, Google generates an API key you must add to the Android manifest. For obvious reasons, you must keep these keys private.
