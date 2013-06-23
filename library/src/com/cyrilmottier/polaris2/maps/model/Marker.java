@@ -114,4 +114,11 @@ public final class Marker {
         mOriginal.showInfoWindow();
     }
 
+    public void setIcon(BitmapDescriptor icon) {
+        mOriginal.setIcon(icon.mOriginal);
+    }
+
+    public void setAnchor(float anchorU, float anchorV) {
+        mOriginal.setAnchor(anchorU, anchorV);
+    }
 }
