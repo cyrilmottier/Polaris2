@@ -13,12 +13,6 @@ apply plugin: 'maven-publish'
 version '1.0.0'
 group 'com.cyrilmottier'
 
-repositories {
-    // should work out of the box without including those repositories, but it doesn't don't know why
-    maven { url 'file://$System.env.ANDROID_HOME/extras/android/m2repository'}
-    maven { url 'file://$System.env.ANDROID_HOME/extras/google/m2repository'}
-}
-
 android {
     sourceSets {
         main {
@@ -43,7 +37,7 @@ android {
     buildToolsVersion "17.0.0"
 
     defaultConfig {
-        minSdkVersion 11
+        minSdkVersion 8
         targetSdkVersion 17
         versionCode 1
         versionName '1.0'
