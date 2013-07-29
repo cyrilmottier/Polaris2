@@ -113,5 +113,9 @@ public final class Marker {
     public void showInfoWindow() {
         mOriginal.showInfoWindow();
     }
+    
+    public void setIcon(BitmapDescriptor icon) {
+    	mOriginal.setIcon(icon.mOriginal);
+    }
 
 }
