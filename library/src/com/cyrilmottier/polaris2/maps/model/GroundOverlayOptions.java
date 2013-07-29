@@ -24,7 +24,7 @@ public final class GroundOverlayOptions implements Parcelable {
 
     public static final Parcelable.Creator<GroundOverlayOptions> CREATOR = new Parcelable.Creator<GroundOverlayOptions>() {
         public GroundOverlayOptions createFromParcel(Parcel in) {
-            return new GroundOverlayOptions((com.google.android.gms.maps.model.GroundOverlayOptions) in.readParcelable(null));
+            return new GroundOverlayOptions((com.google.android.gms.maps.model.GroundOverlayOptions) in.readParcelable(com.google.android.gms.maps.model.GroundOverlayOptions.class.getClassLoader()));
         }
 
         public GroundOverlayOptions[] newArray(int size) {

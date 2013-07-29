@@ -24,7 +24,7 @@ public final class CircleOptions implements Parcelable {
 
     public static final Parcelable.Creator<CircleOptions> CREATOR = new Parcelable.Creator<CircleOptions>() {
         public CircleOptions createFromParcel(Parcel in) {
-            return new CircleOptions((com.google.android.gms.maps.model.CircleOptions) in.readParcelable(null));
+            return new CircleOptions((com.google.android.gms.maps.model.CircleOptions) in.readParcelable(com.google.android.gms.maps.model.CircleOptions.class.getClassLoader()));
         }
 
         public CircleOptions[] newArray(int size) {

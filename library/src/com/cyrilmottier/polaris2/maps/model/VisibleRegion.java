@@ -22,7 +22,7 @@ public final class VisibleRegion implements Parcelable {
 
     public static final Parcelable.Creator<VisibleRegion> CREATOR = new Parcelable.Creator<VisibleRegion>() {
         public VisibleRegion createFromParcel(Parcel in) {
-            return new VisibleRegion((com.google.android.gms.maps.model.VisibleRegion) in.readParcelable(null));
+            return new VisibleRegion((com.google.android.gms.maps.model.VisibleRegion) in.readParcelable(com.google.android.gms.maps.model.VisibleRegion.class.getClassLoader()));
         }
 
         public VisibleRegion[] newArray(int size) {

@@ -22,7 +22,7 @@ public final class Tile implements Parcelable {
 
     public static final Parcelable.Creator<Tile> CREATOR = new Parcelable.Creator<Tile>() {
         public Tile createFromParcel(Parcel in) {
-            return new Tile((com.google.android.gms.maps.model.Tile) in.readParcelable(null));
+            return new Tile((com.google.android.gms.maps.model.Tile) in.readParcelable(com.google.android.gms.maps.model.Tile.class.getClassLoader()));
         }
 
         public Tile[] newArray(int size) {

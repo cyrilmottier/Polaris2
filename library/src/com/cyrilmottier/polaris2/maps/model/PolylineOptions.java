@@ -28,7 +28,7 @@ public final class PolylineOptions implements Parcelable {
 
     public static final Parcelable.Creator<PolylineOptions> CREATOR = new Parcelable.Creator<PolylineOptions>() {
         public PolylineOptions createFromParcel(Parcel in) {
-            return new PolylineOptions((com.google.android.gms.maps.model.PolylineOptions) in.readParcelable(null));
+            return new PolylineOptions((com.google.android.gms.maps.model.PolylineOptions) in.readParcelable(com.google.android.gms.maps.model.PolylineOptions.class.getClassLoader()));
         }
 
         public PolylineOptions[] newArray(int size) {

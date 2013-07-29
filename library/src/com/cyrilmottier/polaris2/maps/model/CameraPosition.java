@@ -24,7 +24,7 @@ public final class CameraPosition implements Parcelable {
 
     public static final Parcelable.Creator<CameraPosition> CREATOR = new Parcelable.Creator<CameraPosition>() {
         public CameraPosition createFromParcel(Parcel in) {
-            return new CameraPosition((com.google.android.gms.maps.model.CameraPosition) in.readParcelable(null));
+            return new CameraPosition((com.google.android.gms.maps.model.CameraPosition) in.readParcelable(com.google.android.gms.maps.model.CameraPosition.class.getClassLoader()));
         }
 
         public CameraPosition[] newArray(int size) {

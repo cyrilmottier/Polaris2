@@ -26,7 +26,7 @@ public final class LatLng implements Parcelable {
 
     public static final Parcelable.Creator<LatLng> CREATOR = new Parcelable.Creator<LatLng>() {
         public LatLng createFromParcel(Parcel in) {
-            return new LatLng((com.google.android.gms.maps.model.LatLng) in.readParcelable(null));
+            return new LatLng((com.google.android.gms.maps.model.LatLng) in.readParcelable(com.google.android.gms.maps.model.LatLng.class.getClassLoader()));
         }
 
         public LatLng[] newArray(int size) {

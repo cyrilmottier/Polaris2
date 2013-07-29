@@ -26,7 +26,7 @@ public final class GoogleMapOptions implements Parcelable {
 
     public static final Parcelable.Creator<GoogleMapOptions> CREATOR = new Parcelable.Creator<GoogleMapOptions>() {
         public GoogleMapOptions createFromParcel(Parcel in) {
-            return new GoogleMapOptions((com.google.android.gms.maps.GoogleMapOptions) in.readParcelable(null));
+            return new GoogleMapOptions((com.google.android.gms.maps.GoogleMapOptions) in.readParcelable(com.google.android.gms.maps.GoogleMapOptions.class.getClassLoader()));
         }
 
         public GoogleMapOptions[] newArray(int size) {

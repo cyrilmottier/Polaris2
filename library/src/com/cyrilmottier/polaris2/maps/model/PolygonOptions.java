@@ -28,7 +28,7 @@ public final class PolygonOptions implements Parcelable {
 
     public static final Parcelable.Creator<PolygonOptions> CREATOR = new Parcelable.Creator<PolygonOptions>() {
         public PolygonOptions createFromParcel(Parcel in) {
-            return new PolygonOptions((com.google.android.gms.maps.model.PolygonOptions) in.readParcelable(null));
+            return new PolygonOptions((com.google.android.gms.maps.model.PolygonOptions) in.readParcelable(com.google.android.gms.maps.model.PolygonOptions.class.getClassLoader()));
         }
 
         public PolygonOptions[] newArray(int size) {

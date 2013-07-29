@@ -24,7 +24,7 @@ public final class MarkerOptions implements Parcelable {
 
     public static final Parcelable.Creator<MarkerOptions> CREATOR = new Parcelable.Creator<MarkerOptions>() {
         public MarkerOptions createFromParcel(Parcel in) {
-            return new MarkerOptions((com.google.android.gms.maps.model.MarkerOptions) in.readParcelable(null));
+            return new MarkerOptions((com.google.android.gms.maps.model.MarkerOptions) in.readParcelable(com.google.android.gms.maps.model.MarkerOptions.class.getClassLoader()));
         }
 
         public MarkerOptions[] newArray(int size) {

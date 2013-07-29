@@ -24,7 +24,7 @@ public final class TileOverlayOptions implements Parcelable {
 
     public static final Parcelable.Creator<TileOverlayOptions> CREATOR = new Parcelable.Creator<TileOverlayOptions>() {
         public TileOverlayOptions createFromParcel(Parcel in) {
-            return new TileOverlayOptions((com.google.android.gms.maps.model.TileOverlayOptions) in.readParcelable(null));
+            return new TileOverlayOptions((com.google.android.gms.maps.model.TileOverlayOptions) in.readParcelable(com.google.android.gms.maps.model.TileOverlayOptions.class.getClassLoader()));
         }
 
         public TileOverlayOptions[] newArray(int size) {
