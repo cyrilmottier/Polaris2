@@ -344,7 +344,6 @@ public final class GoogleMap {
 
     public final void setPadding(int left, int top, int right, int bottom) {
         mOriginal.setPadding(left ,top ,right ,bottom);
-            
     }
     
     public void stopAnimation() {
