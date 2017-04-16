@@ -36,11 +36,11 @@ Usage
          mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map))
                      .getPolarisMap();
 
-###Including Polaris v2 in your project
+### Including Polaris v2 in your project
 
 Polaris v2 is presented as an [Android library project](http://developer.android.com/guide/developing/projects/projects-eclipse.html). You can include it by [referencing it as a library project](http://developer.android.com/guide/developing/projects/projects-eclipse.html#ReferencingLibraryProject) in Eclipse, IntelliJ or ant.
 
-###Building the sample application
+### Building the sample application
 
 Using the Google Maps Android API v2 requires you to register a signing key to Google. When doing so, Google generates an API key you must add to the Android manifest. For obvious reasons, you must keep these keys private.
 
